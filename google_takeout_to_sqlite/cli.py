@@ -26,9 +26,7 @@ def cli():
 )
 def my_activity(db_path, zip_path):
     "Import all My Activity data from Takeout zip to SQLite"
-    db = sqlite_utils.Database(db_path)
-    zf = zipfile.ZipFile(zip_path)
-    utils.save_my_activity(db, zf)
+    pass
 
 
 @cli.command(name="location-history")
@@ -44,6 +42,4 @@ def my_activity(db_path, zip_path):
 )
 def my_activity(db_path, zip_path):
     "Import all Location History data from Takeout zip to SQLite"
-    db = sqlite_utils.Database(db_path)
-    zf = zipfile.ZipFile(zip_path)
-    utils.save_location_history(db, zf)
+    pass
